@@ -11,17 +11,17 @@ namespace FFMpeg\Format\Audio;
 /**
  * The Ulaw audio format
  */
-class Ulaw extends DefaultAudio
+class Alaw extends DefaultAudio
 {
     public function __construct()
     {
-        $this->audioCodec = 'pcm_mulaw';
+        $this->audioCodec = 'pcm_alaw';
     }
     /**
      * {@inheritDoc}
      */
     public function getAvailableAudioCodecs()
     {
-        return array('pcm_mulaw');
+        return array('pcm_alaw');
     }
 }

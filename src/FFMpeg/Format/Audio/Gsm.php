@@ -9,19 +9,19 @@
  */
 namespace FFMpeg\Format\Audio;
 /**
- * The Ulaw audio format
+ * The GSM audio format
  */
-class Ulaw extends DefaultAudio
+class Gsm extends DefaultAudio
 {
     public function __construct()
     {
-        $this->audioCodec = 'pcm_mulaw';
+        $this->audioCodec = 'gsm';
     }
     /**
      * {@inheritDoc}
      */
     public function getAvailableAudioCodecs()
     {
-        return array('pcm_mulaw');
+        return array('gsm');
     }
 }

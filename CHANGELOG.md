@@ -8,9 +8,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ------------
 
 ### Added
-
+- Add support for ulaw, alaw, g729, gsm, opus
 - Add pull request and issue templates.
 - Usage of new codec "aac" of ffmpeg 3
+Add php
 
 ### Changed
 

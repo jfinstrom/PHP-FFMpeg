@@ -9,19 +9,19 @@
  */
 namespace FFMpeg\Format\Audio;
 /**
- * The Ulaw audio format
+ * The Opus audio format
  */
-class Ulaw extends DefaultAudio
+class Opus extends DefaultAudio
 {
     public function __construct()
     {
-        $this->audioCodec = 'pcm_mulaw';
+        $this->audioCodec = 'opus';
     }
     /**
      * {@inheritDoc}
      */
     public function getAvailableAudioCodecs()
     {
-        return array('pcm_mulaw');
+        return array('opus');
     }
 }

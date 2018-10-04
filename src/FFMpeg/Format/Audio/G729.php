@@ -9,19 +9,19 @@
  */
 namespace FFMpeg\Format\Audio;
 /**
- * The Ulaw audio format
+ * The G.729 audio format
  */
-class Ulaw extends DefaultAudio
+class G729 extends DefaultAudio
 {
     public function __construct()
     {
-        $this->audioCodec = 'pcm_mulaw';
+        $this->audioCodec = 'g729';
     }
     /**
      * {@inheritDoc}
      */
     public function getAvailableAudioCodecs()
     {
-        return array('pcm_mulaw');
+        return array('g729');
     }
 }
